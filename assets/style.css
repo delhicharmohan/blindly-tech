@@ -1,0 +1,60 @@
+:root {
+  --bg: #FDF0EA;
+  --ink: #321525;
+  --accent: #A93750;
+  --soft: #F6CBCE;
+  --sun: #FFD86B;
+  --card: #FFFDFD;
+  --muted: #6b4a5a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d0c15;
+    --ink: #FBEBEB;
+    --accent: #F498AA;
+    --soft: #3a1a2a;
+    --card: #2a1220;
+    --muted: #d8b9c5;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.65 "Plus Jakarta Sans", system-ui, sans-serif;
+}
+a { color: var(--accent); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+.site-header { border-bottom: 1px solid var(--soft); }
+.site-header .wrap { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding-top: 16px; padding-bottom: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-family: "Unbounded", sans-serif; font-size: 20px; }
+.brand img { border-radius: 8px; }
+.brand em { font-style: normal; color: var(--accent); }
+.brand small { font-family: "Plus Jakarta Sans", sans-serif; font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+nav { display: flex; gap: 16px; flex-wrap: wrap; font-weight: 700; font-size: 15px; }
+nav a { color: var(--ink); text-decoration: none; }
+nav a:hover { color: var(--accent); }
+
+.hero { padding: 56px 0 24px; }
+.kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 13px; margin: 0; }
+h1 { font-family: "Unbounded", sans-serif; font-size: clamp(28px, 6vw, 42px); line-height: 1.15; margin: 12px 0; }
+h2 { font-size: 22px; margin-top: 40px; }
+
+.posts ul { list-style: none; padding: 0; margin: 0; }
+.posts li { background: var(--card); border: 1px solid var(--soft); border-radius: 16px; padding: 20px; margin-bottom: 16px; }
+.posts li a { display: block; font-size: 20px; font-weight: 800; text-decoration: none; color: var(--ink); margin: 4px 0; }
+.posts li a:hover { color: var(--accent); }
+.posts li p { margin: 0; color: var(--muted); }
+time, .meta { color: var(--muted); font-size: 14px; font-weight: 500; }
+
+.post { padding: 40px 0; }
+.lede { font-size: 20px; color: var(--muted); }
+.content img { max-width: 100%; height: auto; }
+.content pre { overflow-x: auto; background: var(--card); padding: 16px; border-radius: 12px; border: 1px solid var(--soft); }
+.cta { background: var(--card); border-left: 4px solid var(--sun); border-radius: 12px; padding: 4px 20px; margin: 40px 0 24px; }
+
+.site-footer { border-top: 1px solid var(--soft); margin-top: 48px; padding: 24px 0 40px; font-size: 15px; color: var(--muted); }
+.site-footer .fine { font-size: 13px; }

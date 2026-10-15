@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blindly Engineering — Tech updates from the Blindly team
+---
+<section class="hero">
+  <p class="kicker">✦ blindly engineering</p>
+  <h1>Tech updates from the team building Blindly</h1>
+  <p>Release notes, engineering deep-dives and product updates from <a href="https://blindly.date/">Blindly</a>, the voice-first blind dating app built in India.</p>
+</section>
+
+<section class="posts">
+  <h2>Latest updates</h2>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %b %Y' }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

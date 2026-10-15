@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="post">
+  <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>{% if page.tags.size > 0 %} · {{ page.tags | join: ', ' }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+  <div class="content">
+    {{ content }}
+  </div>
+  <aside class="cta">
+    <p><strong>Try Blindly</strong>: fall for the person, not the profile. Blindly is launching on the App Store and Google Play. <a href="https://blindly.date/">Join the waitlist at blindly.date →</a></p>
+  </aside>
+  <p><a href="{{ '/' | relative_url }}">← All updates</a></p>
+</article>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FDF0EA">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" type="image/png" href="{{ '/assets/icon-512.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Unbounded:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://blindly.date/#org",
+    "name": "Blindly",
+    "legalName": "Ayrav Technologies Private Limited",
+    "url": "https://blindly.date/",
+    "logo": "https://blindly.date/icon-512.png",
+    "email": "info@blindly.date",
+    "sameAs": [
+      "https://www.instagram.com/blindlydating",
+      "https://www.youtube.com/@blindlydating",
+      "https://www.reddit.com/r/blindly",
+      "https://x.com/blindlydating",
+      "https://www.linkedin.com/company/blindly"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/icon-512.png' | relative_url }}" alt="" width="32" height="32">
+        <span>blind<em>ly</em> <small>engineering</small></span>
+      </a>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Updates</a>
+        <a href="{{ '/about/' | relative_url }}">About Blindly</a>
+        <a href="https://blindly.date/" rel="noopener">blindly.date ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>Blindly</strong> is a blind dating app in India. No photos, no bios: choose your mood, talk by voice, and reveal each other only when you both say yes. <a href="https://blindly.date/">Visit blindly.date →</a></p>
+      <p class="links">
+        <a href="https://www.instagram.com/blindlydating" rel="noopener">Instagram</a> ·
+        <a href="https://www.youtube.com/@blindlydating" rel="noopener">YouTube</a> ·
+        <a href="https://www.reddit.com/r/blindly" rel="noopener">Reddit</a> ·
+        <a href="https://x.com/blindlydating" rel="noopener">X</a> ·
+        <a href="https://www.linkedin.com/company/blindly" rel="noopener">LinkedIn</a> ·
+        <a href="https://blindly.date/careers">Careers</a> ·
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </p>
+      <p class="fine">© {{ site.time | date: '%Y' }} Blindly. Blindly™ and the Blindly logo are trademarks of Ayrav Technologies Private Limited.</p>
+    </div>
+  </footer>
+</body>
+</html>

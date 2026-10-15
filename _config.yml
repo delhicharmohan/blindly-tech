@@ -1,0 +1,51 @@
+title: Blindly Engineering
+tagline: Tech updates from the team building Blindly
+description: >-
+  The Blindly engineering blog. Tech updates, product releases and behind-the-scenes
+  notes from the team building Blindly, the voice-first blind dating app in India.
+url: "https://delhicharmohan.github.io"
+baseurl: "/blindly-tech"
+lang: en_IN
+timezone: Asia/Kolkata
+
+author:
+  name: Blindly Engineering
+  url: https://blindly.date/
+
+logo: /assets/icon-512.png
+
+social:
+  name: Blindly
+  links:
+    - https://blindly.date/
+    - https://www.instagram.com/blindlydating
+    - https://www.youtube.com/@blindlydating
+    - https://www.reddit.com/r/blindly
+    - https://x.com/blindlydating
+    - https://www.linkedin.com/company/blindly
+
+twitter:
+  username: blindlydating
+  card: summary_large_image
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      image: /assets/icon-512.png
+
+# Paste the token from Google Search Console (HTML tag method) here, then push.
+# webmaster_verifications:
+#   google: YOUR_GOOGLE_SITE_VERIFICATION_TOKEN
+
+permalink: /:year/:month/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - README.md
